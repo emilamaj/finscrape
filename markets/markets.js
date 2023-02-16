@@ -4,6 +4,7 @@
 // Here is the list of all the currently supported centralized markets:
 // - Binance
 // - Kraken
+// - Coinbase
 
 // Here is the list of all the currently supported decentralized markets:
 
@@ -16,7 +17,6 @@
 // - P2B
 // - OKX
 // - MEXC
-// - Coinbase
 // - Gate.io
 // - KuCoin
 // - Bybit
@@ -29,8 +29,8 @@
 // - Poloniex
 // - Bithumb
 // Decentralized markets 
-// - Uniswap V3
 // - Uniswap V2
+// - Uniswap V3
 // - Sushiswap
 // - Balancer
 // - Curve
@@ -40,14 +40,16 @@
 // Import a module for each market
 binance = require('./binance');
 kraken = require('./kraken');
+coinbase = require('./coinbase');
+uniswapV2 = require('./uniswapV2');
 
 
 
 // Array containing the names of all the markets
-const marketList = ['binance', 'kraken'];
+const marketList = ['binance', 'kraken', 'coinbase', 'uniswapV2'];
 
 // Object containing all the market modules
-const marketModules = {binance, kraken};
+const marketModules = {binance, kraken, coinbase, uniswapV2};
 
 // This function returns the list of all the pairs on a given market
 async function getPairs(market) {
