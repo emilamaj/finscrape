@@ -5,6 +5,7 @@
 // - Binance
 // - Kraken
 // - Coinbase
+// - Uniswap V2
 
 // Here is the list of all the currently supported decentralized markets:
 
@@ -29,7 +30,6 @@
 // - Poloniex
 // - Bithumb
 // Decentralized markets 
-// - Uniswap V2
 // - Uniswap V3
 // - Sushiswap
 // - Balancer
